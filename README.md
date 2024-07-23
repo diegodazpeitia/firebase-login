@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# React Firebase Authentication Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React application demonstrating user registration and login using Firebase Authentication.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Registration**: Allows users to register with their email and password.
+- **User Login**: Allows registered users to log in with their credentials.
+- **Routing**: Uses React Router for navigation between registration and login pages.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/diegodazpeitia/firebase-login.git
+   cd firebase-login
+   ```
 
-### `npm test`
+2. Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+3. Set up Firebase Configuration:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+   - Obtain your Firebase configuration object from the Firebase console.
+   - Replace the configuration object in `src/auth.js` and `src/App.js` with your Firebase project's configuration.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Run the application:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+   Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Registration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Navigate to `/register` route to access the registration form.
+- Enter your email and password, then submit the form to register a new user.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Login
 
-## Learn More
+- Navigate to `/login` route to access the login form.
+- Enter your registered email and password, then submit the form to log in.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **`src/App.js`**: Main component handling routing between registration and login.
+- **`src/register.js`**: Component for user registration form.
+- **`src/login.js`**: Component for user login form.
+- **`src/auth.js`**: Firebase setup and authentication functions (`register` and `login`).
 
-### Code Splitting
+## Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React**: Frontend library for building user interfaces.
+- **React Router**: Declarative routing for React applications.
+- **Firebase**: Backend-as-a-Service platform for building web and mobile applications.
 
-### Analyzing the Bundle Size
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This project is intended as a demonstration and may require additional configuration and error handling for production use.
+- Customize and extend functionalities as per your project requirements.
