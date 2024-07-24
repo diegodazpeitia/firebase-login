@@ -62,6 +62,11 @@ This is a simple React application demonstrating user registration and login usi
 - **React Router**: Declarative routing for React applications.
 - **Firebase**: Backend-as-a-Service platform for building web and mobile applications.
 
+# What you will experience 
+
+<img width="508" alt="Captura de pantalla 2024-07-24 a la(s) 14 48 36" src="https://github.com/user-attachments/assets/defe03c6-45c7-4136-ba3d-9de31911cb1f">
+
+
 ## Notes
 
 - This project is intended as a demonstration and may require additional configuration and error handling for production use.
